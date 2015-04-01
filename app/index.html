@@ -11,14 +11,17 @@
     <link href="../bower_components/angular-material/angular-material.min.css" rel="stylesheet">
     <!-- Musician 1st Register HomePage -->
     <link href="../bower_components/bootstrap/explore-template/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../bower_components/bootstrap/explore-template/css/portfolio-item.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/explore-template/css/heroic-features.css" rel="stylesheet">
     <!--  Musician Login HomePage -->
     <link href="../bower_components/bootstrap/profile-template/css/bootstrap.min.css" rel="stylesheet">
     <link href="../bower_components/bootstrap/profile-template/css/3-col-portfolio.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
   </head>
+    <body ng-app="MusicConnect">
 
-  <body>
+    <div class="jumbotron">
+        <div ng-view=""></div>
+    </div>
 
 
     <script src="../bower_components/angular/angular.min.js"></script>
@@ -36,6 +39,8 @@
     <script src="../bower_components/bootstrap/explore-template/js/jquery.js"></script>
     <script src="../bower_components/bootstrap/explore-template/js/bootstrap.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="scripts/app.js"></script>
   </body>
 </html>
 
