@@ -13,8 +13,9 @@ var app = angular
         templateUrl: 'views/post-jam.html',
         controller: 'JamController'
       })
-      .when('/edit/:taskId', {
-        templateUrl: 'views/edit.html',
+      .when('/edit-jam/:jamId', {
+        templateUrl: 'views/edit-jam.html',
+        controller: 'JamController'
       })
       .when('/browse-jams', {
         templateUrl: 'views/browse-jams.html',

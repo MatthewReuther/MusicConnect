@@ -1,1 +1,13 @@
-<h2>Edit Task</h2>
+<div class="container">
+  <div class="row title">
+    <div class="col-md-6 col-md-offset-3">
+
+      <form ng-submit="updateJam(selectedJam)">
+          <input type="text" ng-model="selectedJam.title" class="form-control" placeholder="Jam title" required><br>
+          <textarea ng-model="selectedJam.description" class="form-control" placeholder="Describe what you need done" required></textarea><br>
+          <input type="text" ng-model="selectedJam.length" class="form-control" placeholder="How long will it go on for?" required><br>
+          <input type="submit" value="Update Jam" class="btn btn-info">
+        </form>
+    </div>
+  </div>
+</div>

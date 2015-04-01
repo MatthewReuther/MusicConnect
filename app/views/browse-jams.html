@@ -1,5 +1,29 @@
 <h2>Browse Task</h2>
+<div class="container">
+  <div class="row">
 
-<ul ng-repeat="jam in jams">
-  <li>{{jam.title}} - {{jam.description}} - {{jam.length}} </li>
-</ul>
+    <div class="col-md-offset-2 col-md-8">
+      <div class="list-group">
+        <div class="title">
+          <a href="#/post" class="btn btn-primary">Post a Jam</a>
+          </div>
+          <br>
+          <!-- TASK LIST -->
+          <a ng-repeat="jam in jams" ng-href="#/edit-jam/{{jam.$id}}">
+            <div class="list-group-item">
+                  <div class="row-content">
+                      <h4 class="list-group-item-heading">{{jam.title}}</h4>
+                      <span class="list-group-item-text">
+                        {{jam.description}}
+                      </span>
+                  </div>
+                  <div class="payment">
+                    <div>{{jam.length}}</div>
+                  </div>
+              </div>
+              <div class="list-group-separator"></div>
+            </a>
+      </div>
+    </div>
+  </div>
+</div>
