@@ -10,7 +10,8 @@ var app = angular
         templateUrl: 'views/main.html'
       })
       .when('/post', {
-        templateUrl: 'views/post.html',
+        templateUrl: 'views/post-jam.html',
+        controller: 'JamController'
       })
       .when('/edit/:taskId', {
         templateUrl: 'views/edit.html',
