@@ -16,8 +16,9 @@ var app = angular
       .when('/edit/:taskId', {
         templateUrl: 'views/edit.html',
       })
-      .when('/browse', {
-        templateUrl: 'views/browse.html',
+      .when('/browse-jams', {
+        templateUrl: 'views/browse-jams.html',
+        controller: 'JamController'
       })
       .otherwise({
         redirectTo: '/'
