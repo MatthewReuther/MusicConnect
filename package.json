@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MatthewReuther/MusicConnect",
   "dependencies": {
+    "angularfire": "^1.0.0",
     "firebase": "^2.2.3"
   }
 }
