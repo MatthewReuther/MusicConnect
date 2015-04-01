@@ -1,0 +1,19 @@
+{
+  "name": "MusicConnect",
+  "version": "1.0.0",
+  "description": "An application using angularjs and firebase that allows musicians looking for musicians to connect and meetup to play music",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MatthewReuther/MusicConnect.git"
+  },
+  "author": "Matthew Reuther",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MatthewReuther/MusicConnect/issues"
+  },
+  "homepage": "https://github.com/MatthewReuther/MusicConnect"
+}
