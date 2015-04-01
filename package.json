@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MatthewReuther/MusicConnect/issues"
   },
-  "homepage": "https://github.com/MatthewReuther/MusicConnect"
+  "homepage": "https://github.com/MatthewReuther/MusicConnect",
+  "dependencies": {
+    "firebase": "^2.2.3"
+  }
 }
