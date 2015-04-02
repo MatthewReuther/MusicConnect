@@ -17,6 +17,10 @@ var app = angular
         templateUrl: 'views/register.html',
         controller: 'AuthController'
       })
+      .when('/register', {
+        templateUrl: 'views/register.html',
+        controller: 'AuthController'
+      })
       .when('/post-jam', {
         templateUrl: 'views/post-jam.html',
         controller: 'JamController'

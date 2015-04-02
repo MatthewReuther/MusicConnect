@@ -4,6 +4,7 @@
 
       <form ng-submit="postJam(jam)">
           <input type="text" ng-model="jam.title" class="form-control" placeholder="Jam Title" required><br>
+          <input type="url" ng-model="jam.img" class="form-control" placeholder="Insert Profile Picture" required><br>
           <textarea ng-model="jam.description" class="form-control" placeholder="What You're Looking For" required></textarea><br>
           <input type="text" ng-model="jam.length" class="form-control" placeholder="How Long are You Thinking about Jamming?" required><br>
           <input type="submit" value="Post" class="btn btn-primary">

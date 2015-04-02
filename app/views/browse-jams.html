@@ -1,26 +1,25 @@
 <h2>Browse Task</h2>
 <div class="container">
   <div class="row">
-    <div class="col-md-offset-2 col-md-8">
-      <div class="list-group">
-        <div class="title">
-
-          <!-- TASK LIST -->
-          <a ng-repeat="jam in jams" ng-href="#/edit-jam/{{jam.$id}}">
-            <div class="list-group-item">
-                  <div class="row-content">
-                      <h4 class="list-group-item-heading">{{jam.title}}</h4>
-                      <span class="list-group-item-text">
-                        {{jam.description}}
-                      </span>
-                  </div>
-                  <div class="payment">
-                    <div>{{jam.length}}</div>
-                  </div>
-              </div>
-              <div class="list-group-separator"></div>
-            </a>
+    <div class="col-lg-12">
+      <h3>Latest Features</h3>
+    </div>
+  </div>
+  <!-- /.row -->
+  <!-- Page Features -->
+  <div class="row text-center">
+    <div ng-repeat="jam in jams">
+      <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+          <img src="http://placehold.it/800x500" ng-src="{{jam.img}}">
+          <div class="caption">
+            <h3>{{jam.title}}</h3>
+            <h6>{{jam.description}}</h6>
+            <a ng-href="#/edit-jam/{{jam.$id}}" class="btn btn-primary">View Profile!</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+

@@ -5,9 +5,110 @@
       <form ng-submit="updateJam(selectedJam)">
           <input type="text" ng-model="selectedJam.title" class="form-control" placeholder="Jam title" required><br>
           <textarea ng-model="selectedJam.description" class="form-control" placeholder="Describe what you need done" required></textarea><br>
+          <input type="url" ng-model="jam.img" class="form-control" placeholder="Insert Profile Picture" required><br>
           <input type="text" ng-model="selectedJam.length" class="form-control" placeholder="How long will it go on for?" required><br>
           <input type="submit" value="Update Jam" class="btn btn-info">
         </form>
     </div>
   </div>
 </div>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Portfolio Item
+                    <small>Item Subheading</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-6">
+                <img class="img-responsive" src="http://placehold.it/750x500" ng-src="{{selectedJam.img}}">
+            </div>
+            <div class="col-md-1">
+            </div>
+
+            <div class="col-md-4">
+                <h3>Project Details</h3>
+                <ul>
+                  <li>{{selectedJam.title}}</li>
+                  <li>{{selectedJam.description}}</li>
+                  <li>{{selectedJam.length}}</li>
+                  <li>Adipiscing Elit</li>
+                </ul>
+                <h3>Project Description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Related Projects</h3>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
