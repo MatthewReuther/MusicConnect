@@ -8,7 +8,7 @@ app.controller('NavController', function($scope, $location, Auth) {
   $scope.logout = function() {
     Auth.logout();
     console.log("Logged out successfully");
-    $location.path('/');
+    $location.path('/main.html');
   };
 
 });
