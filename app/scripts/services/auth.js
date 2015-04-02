@@ -6,6 +6,7 @@ app.factory('Auth', function(BASE, $firebaseAuth, $firebase) {
   var auth = $firebaseAuth(ref);
 
   var Auth = {
+
     user: {},
 
     login: function(user) {
@@ -15,18 +16,12 @@ app.factory('Auth', function(BASE, $firebaseAuth, $firebase) {
     },
 
     register: function(user) {
-      return Auth.$createUser({email: user.email, password: user.password})
+      return auth.$createUser({email: user.email, password: user.password})
         .then(function() {
           // authenticate so we have permission to write to Firebase
           return Auth.login(user);
         });
     },
-
-    // register: function (user, cb) {
-    //   var fb = new Firebase(BASE);
-
-    //   fb.createUser(user, cb);
-    // },
 
     logout: function() {
       auth.$unauth();
@@ -37,7 +32,7 @@ app.factory('Auth', function(BASE, $firebaseAuth, $firebase) {
     },
 
     signedIn: function() {
-      return !!Auth.user.provider; //using !! means (0, undefined, null, etc) = false | otherwise = true
+      return !!Auth.user.provider;
     }
   };
 

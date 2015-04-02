@@ -3,29 +3,13 @@
 app.controller('AuthController', function($scope, $location, Auth) {
 
   $scope.register = function(user) {
-    Auth.register(user)
-      .then(function() {
+    Auth.register(user).then(function() {
         console.log('success', "Registered successfully");
         $location.path('/');
       }, function(err) {
         console.log("Error...");
       });
   };
-
-  // $scope.register = function (user) {
-  //   Auth.register($scope.user, function (err, authData) {
-  //     if (err && err.code === 'EMAIL_TAKEN') {
-  //       console.log('Error creating user:', err);
-  //       vm.login();
-  //     } else if (err) {
-  //       console.log('Error creating user:', err)
-  //     } else {
-  //       console.log('User created successfully', authData);
-  //       $scope.login();
-  //     }
-  //   });
-  // };
-
 
   $scope.login = function(user) {
      Auth.login(user)
