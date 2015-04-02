@@ -15,12 +15,18 @@ app.factory('Auth', function(BASE, $firebaseAuth, $firebase) {
     },
 
     register: function(user) {
-      return auth.$createUser({email: user.email, password: user.password})
+      return Auth.$createUser({email: user.email, password: user.password})
         .then(function() {
           // authenticate so we have permission to write to Firebase
           return Auth.login(user);
         });
     },
+
+    // register: function (user, cb) {
+    //   var fb = new Firebase(BASE);
+
+    //   fb.createUser(user, cb);
+    // },
 
     logout: function() {
       auth.$unauth();
