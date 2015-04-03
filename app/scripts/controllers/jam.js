@@ -17,12 +17,12 @@ app.controller('JamController', function($scope, BASE, $firebase, $location, $ro
   $scope.jams = fbJams
   $scope.postJam = function(jam) {
     fbJams.$add(jam);
-    $location.path('/browse-jams');
+    $location.path('/explore-musicians');
   };
 
   $scope.updateJam = function (jam) {
     $scope.selectedJam.$save(jam);
-    $location.path('/browse-jams.html');
+    $location.path('/explore-musicians.html');
   };
 
 });

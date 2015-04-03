@@ -29,8 +29,8 @@ var app = angular
         templateUrl: 'views/edit-jam.html',
         controller: 'JamController'
       })
-      .when('/browse-jams', {
-        templateUrl: 'views/browse-jams.html',
+      .when('/explore-musicians', {
+        templateUrl: 'views/explore-musicians.html',
         controller: 'JamController'
       })
       .otherwise({
